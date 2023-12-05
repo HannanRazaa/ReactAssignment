@@ -2,10 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
+  height: 15vh;
   margin-top: -80px;
   font-size: 20px;
   font-weight: bold;
+  /* border: 1.5px solid black; */
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .detail {
@@ -15,6 +18,7 @@
   height: 50vh;
   font-size: 20px;
   font-weight: bold;
+  color: #4caf50;
 }
 
 .pokemonDetails > div {
@@ -28,6 +32,12 @@
 .right {
   flex: 1;
   padding: 10px;
+  border: 1.5px solid #4caf50;
+  font-size: 20px;
+  font-weight: bold;
+  color: #4caf50;
+  background-color: white;
+  border-radius: 4px;
 }
 
 .left {

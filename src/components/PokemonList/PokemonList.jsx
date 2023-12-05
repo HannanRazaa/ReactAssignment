@@ -3,11 +3,10 @@ import { useApollo } from "../../contexts/ApolloContext";
 import { useNavigate } from "react-router-dom";
 import "./PokemonList.css";
 
-const ITEMS_PER_PAGE = 50;
-
 function PokemonList() {
   const { apiData } = useApollo();
   const navigate = useNavigate();
+  const ITEMS_PER_PAGE = 50;
 
   const allPokemonData = apiData?.getAllPokemon || [];
   const [searchTerm, setSearchTerm] = useState("");

@@ -1,4 +1,3 @@
-// DetailPokemon.js
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useApollo } from "../../contexts/ApolloContext";
@@ -10,7 +9,7 @@ function PokemonDetail() {
   const navigate = useNavigate();
   const species = state.species;
 
-  const filteredData = (apiData?.getAllPokemon).filter(
+  const filteredData = (apiData?.getAllPokemon || []).filter(
     (pokemon) => pokemon.species === species
   );
 
